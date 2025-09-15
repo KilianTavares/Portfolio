@@ -33,6 +33,9 @@ body {
 .blueOnHover {
   @apply transition-all ease-in duration-100 lg:hover:shadow-[0_20px_50px_rgba(0,_97,_166,_1)];
 }
+.blackOnHover {
+  @apply transition-all ease-in duration-100 lg:hover:shadow-[0_0px_30px_rgba(0,_0,_0,_0.8)];
+}
 
 @keyframes typing {
   0% {

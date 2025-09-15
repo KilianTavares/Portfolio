@@ -31,7 +31,7 @@ export default function ImageCarousel({
     >
       {images.map((item, index) => (
         <SplideSlide key={index}>
-          <div className="flex flex-col items-center justify-center p-4">
+          <div className="flex flex-col items-center  justify-center p-4">
             {item.image}
             <span className="mt-2 text-sm">{item.name}</span>
           </div>

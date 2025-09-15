@@ -15,6 +15,53 @@ const carouselImages = [
   "https://picsum.photos/200/100?random=3",
 ];
 
+const projects = [
+  {
+    name: "IoT Dashboard",
+    image: (
+      <Image
+        src="https://cdn.sanity.io/images/kixov3wn/production/9bb656fa64cf18864469192e664c04f194b61bac-1640x924.png"
+        alt="IoT Dashboard"
+        width={600}
+        height={400}
+      />
+    ),
+  },
+  {
+    name: "E-Commerce Platform",
+    image: (
+      <Image
+        src="https://picsum.photos/600/400?random=10"
+        alt="E-Commerce Platform"
+        width={600}
+        height={400}
+      />
+    ),
+  },
+  {
+    name: "Task Management App",
+    image: (
+      <Image
+        src="https://picsum.photos/600/400?random=11"
+        alt="Task Management App"
+        width={600}
+        height={400}
+      />
+    ),
+  },
+  {
+    name: "Weather Dashboard",
+    image: (
+      <Image
+        src="https://picsum.photos/600/400?random=12"
+        alt="Weather Dashboard"
+        width={600}
+        height={400}
+      />
+    ),
+  },
+];
+
 export default function Home() {
   return (
     <main className="text-white flex  flex-col items-center justify-between px-14 py-7 ">
@@ -43,7 +90,7 @@ export default function Home() {
           />
           <CenterContentBox>
             <h5 className="text-3xl">Featured Projects</h5>
-            <ImageCarousel images={carouselImages} perPage={1} />
+            <ImageCarousel images={projects} perPage={3} />
             <button className="border-1 p-2 text-lg border-dashed  cursor-pointer">
               View all
             </button>
