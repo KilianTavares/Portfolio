@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
 interface ImageCarouselProps {
-  images: { name: string; image: React.ReactNode }[];
+  images: { name: string; image: string | React.ReactNode }[];
   perPage?: number;
 }
 

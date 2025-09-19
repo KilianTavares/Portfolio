@@ -10,9 +10,9 @@ import FlexWrapBox from "@/components/FlexWrapBox";
 import Header from "@/components/Header";
 
 const carouselImages = [
-  "https://picsum.photos/200/100?random=1",
-  "https://picsum.photos/200/100?random=2",
-  "https://picsum.photos/200/100?random=3",
+  { name: "project", image: "https://picsum.photos/400/100?random=1" },
+  { name: "project", image: "https://picsum.photos/400/100?random=2" },
+  { name: "project", image: "https://picsum.photos/400/100?random=3" },
 ];
 
 const projects = [
@@ -97,12 +97,12 @@ export default function Home() {
           </CenterContentBox>
           <FlexWrapBox header="Trusted by">
             {carouselImages.map((src, index) => (
-              <div key={index} className="m-4">
+              <div key={index} className="">
                 <Image
-                  src={src}
+                  src={src.image}
                   alt={`Trusted by ${index + 1}`}
-                  width={290}
-                  height={150}
+                  width={250}
+                  height={100}
                   className=""
                 />
               </div>
